@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Julianatoren - Events</title>
+        <meta name="description" content="Webdesign Course Homework - Make a webpage for a local attraction">
+        <meta name="keywords" content="Julianatoren, amusementpark, child-friendly, webdesign course">
+        <meta name="copyright" content="All images © Julianatoren">
+        
+<!--   
+IMPORTANT:  Because CSS lesson has not been given yet, use traditional styling as much as possible.
+            Validator errors regarding obsolete styling can be ignored. 
+         
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+NHA Webdesign Course - Lesson 9 - Homework Requirements
+
+
+- Topic: a tourist-attraction-near-you (or random other attraction)
+- 3 html pages
+  -> each page with full HTML5-document structure (even when not in use)
+  -> names:     index.html, gallery.html, info.html
+- header has logo image
+- under logo a simple menu with links to the 3 pages
+
+Specifics index.html:
+- short description of tourist attraction; original text or text with source reference
+- iframe showing tourist attractions official website
+
+Specifics gallery.html
+- at minimum 3 images showing the tourist attraction
+- an audiofragment of your own choice
+
+Specifics info.html
+- overview of opening times
+- optionally more relevant info such as travel directions, ticket prices, etc
+- at least 2 YouTube video's of the attraction (or of your own choice)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+NOTE:       To avoid multiple <font> declarations, do use CSS to style font family and background+font color.
+            Use the most whimsical web safe font for a better match with the Halloween theme             
+-->
+        <style>
+            body {
+                background-color: whitesmoke;
+                font-family: cursive;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Header with logo & navigation bar -->
+        <table border="0" style="border-spacing: 0px;" align="center">
+            <tr>
+                <!-- Amusementpark Logo with link to home/index page -->
+                <td width="200" align="center" valign="middle" bgcolor="Black">
+                    <header>
+                    <a href="index.html"><img src="images/logo-julianatoren.webp" height="80" alt="Julianatoren Logo" title="© Julianatoren"></a>                    
+                    </header>                    
+                </td>
+
+                <td width="5" rowspan="5" bgcolor="DarkOrange"> </td>
+
+                <td width="768" rowspan="5" bgcolor="Black">
+
+                    <table width="98%" border="0" align="center">
+                        <tr>
+                            <td height="60" align="center" valign="top">
+                                <!-- For better spacing control use <font size="xx"> instead of <h2> -->
+                                <font size="+2"><b>Children's amusement park Julianatoren is awesome!!!</b></font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <img src="images/pumpkins.jpg" alt="Halloween pumpkins" width="163" align="left" style="vertical-align: bottom;">
+                                With more than <b>60 attractions</b> and shows amusement park Julianatoren<br>
+                                is a great place to visit for children up to 10 years old.<br>
+                                <br>
+                                Be sure to visit them at <strong><font color="DarkOrange">Halloween</font></strong>. It is <font color="Lime"><b>spooky</b></font> ... but only a little. &#x1F47B;
+                            </td>
+                        </tr>                    
+                    </table>
+
+                </td>
+            
+                <!-- use this vertical line to define the cells heights so the wide columns can use rowspan -->
+                <td height="90" width="5" bgcolor="DarkOrange"> </td>
+
+                <!-- Buy tickets image with (extra) link to info page -->
+                <td width="200" height="115" rowspan="3" align="center" valign="top" bgcolor="Black"> 
+                    <a href="info.html"><img src="images/buy-tickets.png" width="154" style="vertical-align: bottom;" alt="Buy tickets for Julianatoren" title="©2023 Julianatoren - Ticket information"></a>
+                </td>                
+            </tr>
+            <tr>
+                <!-- thin horizontal line in left column -->
+                <td bgcolor="DarkOrange"> </td>
+
+                <!-- vertical line used for definining cell heights-->
+                <td height="5" bgcolor="DarkOrange"> </td>
+            </tr>
+            <tr>
+                <!-- Navigation bar - Force text to orange for links -->
+                <td rowspan="3" valign="top" bgcolor="Indigo" style="padding-left: 20px; padding-top: 10px">
+                    <nav><b>
+                    <a href="index.html"><font color="Orange">Homepage</font></a><br>
+                    <a href="gallery.html"><font color="Orange">Events</font></a><br>
+                    <a href="info.html"><font color="Orange">Information</font></a>
+                    </b></nav>                                       
+                </td>
+
+                <!-- vertical line used for definining cell heights-->
+                <td bgcolor="DarkOrange"> </td>                
+            </tr> 
+            <tr>
+                <!-- vertical line used for definining cell heights-->
+                <td height="5" bgcolor="DarkOrange"> </td>
+
+                <!-- thin horizontal line in right column -->
+                <td bgcolor="DarkOrange"> </td>
+            </tr>
+            <tr>
+                <!-- vertical line used for definining cell heights-->
+                <td height="70" bgcolor="DarkOrange"> </td>
+
+                <!-- background filler (because of extra height needed for <nav>) -->
+                <td bgcolor="Indigo"> </td>
+            </tr>                        
+            <tr>
+                <!-- horizontal divider between header and content -->
+                <td bgcolor="Indigo"> </td>
+                <td colspan="3" height="15" bgcolor="DarkOrange"> </td>
+                <td bgcolor="Indigo"> </td>
+            </tr>
+
+            <!-- CONTENT block - see above for requirements -->
+            <tr>
+                <td bgcolor="Indigo"> </td>                
+                <td bgcolor="DarkOrange"> </td>                
+                <td valign="top" bgcolor="Black">
+
+                    <!-- Amusement park images                         
+                    To avoid having to force the color of text links with obsolete styling, only link the images not the texts -->
+                    <table border="0" align="center" style="padding: 0;">
+                        <tr><td height="10" colspan="3"> </td></tr>
+
+                        <tr>
+                            <td height="50" colspan="3" align="center" bgcolor="Indigo">
+                                <font size="+2"><b>Theatershows</b></font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://www.julianatoren.nl/pretpark/shows/wiezel-de-griezel-live/" target="_blank">
+                                <img src="images/JT2023-WiezelDeGriezelLive-1080x1080-v1.webp" width="360" height="360" style="vertical-align: bottom;" alt="Wiezel de Griezel LIVE" title="More info on 'Wiezel de Griezel LIVE' @ juliatoren.nl"></a>
+                            </td>
+                            <td width="10px" rowspan="2"> </td>
+                            <td>
+                                <a href="https://www.julianatoren.nl/pretpark/shows/de-grote-spookshow/" target="_blank">
+                                <img src="images/JT2023-Spookshow-1080x1080-v1.webp" width="360" height="360" style="vertical-align: bottom;" alt="De Grote Spookshow" title="More info on 'De Grote Spookshow' @ julianatoren.nl"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="DarkOrange">Wiezel de Griezel LIVE</td>
+                            <td align="center" bgcolor="DarkOrange">De Grote Spookshow</td>
+                        </tr>
+                        
+                        <tr><td height="40" colspan="3"> </td></tr>
+
+                        <tr>
+                            <td height="50" colspan="3" align="center" bgcolor="Purple">
+                                <font size="+2"><b>Halloween</b></font>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                                <a href="https://www.julianatoren.nl/pretpark/shows/halloween-openingsshow/" target="_blank">
+                                <img src="images/Halloween-Julianatoren-JulJulia-Halloween-Openingsshow-2.webp" width="360" height="203" style="vertical-align: bottom;" alt="Jul & Julia's Halloween Openingsshow" title="More info on 'Jul & Julia's Halloween Openingsshow' @ juliatoren.nl"></a>
+                            </td>
+                            <td width="10px" rowspan="2"> </td>
+                            <td>
+                                <a href="https://www.julianatoren.nl/pretpark/shows/halloween-julianaoren-griezelbos/" target="_blank">
+                                <img src="images/Griezelbos.webp" width="360" height="203" style="vertical-align: bottom;" alt="Griezelbos" title="More info on 'Griezelbos' @ julianatoren.nl"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="LimeGreen">Jul & Julia's Halloween Openingsshow</td>
+                            <td align="center" bgcolor="LimeGreen">Griezelbos</td>
+                        </tr>
+                        
+                        <tr><td height="10" colspan="3"> </td></tr>
+
+                        <tr>
+                            <td>
+                                <a href="https://www.julianatoren.nl/pretpark/shows/dino-dina-halloweenshow/" target="_blank">
+                                <img src="images/Dino-Dinas-Halloweenshow-1024-x-670.webp" width="360" height="203" style="vertical-align: bottom;" alt="Dino & Dina's Halloweenshow" title="More info on 'Dino & Dina's Halloweenshow' @ juliatoren.nl"></a>
+                            </td>
+                            <td width="10px" rowspan="2"> </td>
+                            <td>
+                                <a href="https://www.julianatoren.nl/pretpark/shows/halloween-swing-uitzwaaifeest/" target="_blank">
+                                <img src="images/Jul-Julias-Halloween-Swing-Uitzwaaifeest.webp" width="360" height="203" style="vertical-align: bottom;" alt="Jul & Julia's Halloween Swing & Uitzwaaifeest" title="More info on 'Jul & Julia's Halloween Swing & Uitzwaaifeest' @ julianatoren.nl"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="LimeGreen">Dino & Dina's Halloweenshow</td>
+                            <td align="center" bgcolor="LimeGreen">Jul & Julia's Halloween Swing & Uitzwaaifeest</td>
+                        </tr>                        
+
+                        <tr><td height="40" colspan="3"> </td></tr>
+
+                        <tr>
+                            <td height="50" colspan="3" align="center" bgcolor="Indigo">
+                                <font size="+2"><b>Events 2023</b></font>
+                            </td>
+                        </tr> 
+
+                        <tr>
+                            <td>
+                                <a href="https://www.julianatoren.nl/evenement/halloween/" target="_blank">
+                                <img src="images/Hoofdvisual-Halloween-Kinderpretpark-Julianatoren-2019.webp" width="360" height="203" style="vertical-align: bottom;" alt="Halloween" title="More info on 'Halloween' @ juliatoren.nl"></a>
+                            </td>
+                            <td width="10px" rowspan="2"> </td>
+                            <td>
+                                <a href="https://www.julianatoren.nl/evenement/sinterklaas" target="_blank">
+                                <img src="images/JT2022-Sint-Header-v1.webp" width="360" height="203" style="vertical-align: bottom;" alt="Sinterklaas" title="More info on 'Sinterklaas' @ julianatoren.nl"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="DarkOrange">Halloween</td>
+                            <td align="center" bgcolor="DarkOrange">Sinterklaas</td>
+                        </tr>
+                        
+                        <tr><td height="40" colspan="3"> </td></tr>                        
+
+                        <tr>
+                            <td height="50" colspan="3" align="center" bgcolor="LimeGreen">
+                                <font size="+2"><b>Events 2024</b></font>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                                <a href="https://www.julianatoren.nl/evenement/het-grote-lentefestijn/" target="_blank">
+                                <img src="images/Het-Grote-Lentefestijn-1200-x-676-1.webp" width="360" height="203" style="vertical-align: bottom;" alt="Het Grote Lentefestijn" title="More info on 'Het Grote Lentefestijn' @ juliatoren.nl"></a>
+                            </td>
+                            <td width="10px" rowspan="2"> </td>
+                            <td>
+                                <a href="https://www.julianatoren.nl/evenement/sprookjesachtige-zomerweken/" target="_blank">
+                                <img src="images/JT2023-Sprookjesweken-Keyvisual-Desktop-v1.webp" width="360" height="203" style="vertical-align: bottom;" alt="Sprookjesachtige Zomerweke" title="More info on 'Sprookjesachtige Zomerweken' @ julianatoren.nl"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="Purple">Het Grote Lentefestijn</td>
+                            <td align="center" bgcolor="Purple">Sprookjesachtige Zomerweken</td>
+                        </tr>
+                        
+                        <tr><td height="10" colspan="3"> </td></tr>   
+                        
+                        <tr>
+                            <td>
+                                <a href="https://www.julianatoren.nl/evenement/zomeravonden/" target="_blank">
+                                <img src="images/JT2023-Zomeravond-Assepoester2-Still-Thumb-v1.webp" width="360" height="203" style="vertical-align: bottom;" alt="Zomeravonden" title="More info on 'Zomeravonden' @ juliatoren.nl"></a>
+                            </td>
+                            <td width="10px" rowspan="2"> </td>
+                            <td>
+                                <a href="https://www.julianatoren.nl/evenement/dinoweken/" target="_blank">
+                                <img src="images/Dino-weken-1280-x-720.webp" width="360" height="203" style="vertical-align: bottom;" alt="Dinoweken" title="More info on 'Dinoweken' @ julianatoren.nl"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="Purple">Zomeravonden</td>
+                            <td align="center" bgcolor="Purple">Dinoweken</td>
+                        </tr>
+                        
+                        <tr><td height="60" colspan="3"> </td></tr>
+
+                        <!-- MP3 song -->
+                        <tr>
+                            <td height="50" colspan="3" align="center" bgcolor="DarkOrange">
+                                <font size="+2"><b>Welcome To Julianatoren</b></font>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="360">
+                                <img src="images/juliantoren-deleuksteliedjes_cropped.jpg" width="360" style="vertical-align: bottom;" alt="De Leukste Liedjes" title="Songs from Julianatoren">
+                            </td>
+                            <td width="10px"> </td>
+                            <td width="360" align="center">
+                                To get into the right mood for<br>
+                                your visit be sure to listen to <br>
+                                <font color="DarkOrange">Welkom Bij Julianatoren</font>
+                                <br><br>
+                                <audio src="audio/Welkom_Bij_Julianatoren.mp3" controls></audio>
+                            </td>
+                        </tr>
+                        <tr><td colspan="3"></td></tr>
+
+                        <tr><td height="10" colspan="3"> </td></tr>
+                    </table>
+
+                </td>
+                <td bgcolor="DarkOrange"> </td>
+                <td valign="top" bgcolor="Indigo"> </td>                 
+            </tr>
+
+            <!-- Footer - With copyrights, disclaimer, etc. -->
+            <tr>
+                <!-- horizontal divider between content and footer.      (Do not overcomplicate table by using extra rowspans.) -->
+                <td bgcolor="Indigo"> </td>
+                <td colspan="3" height="15" bgcolor="DarkOrange"> </td>
+                <td bgcolor="Indigo"> </td>
+            </tr>
+            <tr>
+                <td bgcolor="Indigo">&nbsp;</td>                
+                <td rowspan="3" bgcolor="DarkOrange"> </td>                  
+                <td height="90"  rowspan="3" bgcolor="Black">
+                    <footer>
+
+                    <!-- Disclaimer (since these pages will be available online )-->
+                    <table width="90%" border="0" align="center">
+                        <tr>
+                            <td align="center" valign="middle" style="border: 0px;">
+                            <font color="MediumVioletRed">
+                            === DISCLAIMER ===<br>
+                            In no way, shape or form is this mini-website affiliated with amusementpark <strong>Julianatoren</strong>.<br>
+                            This is merely an assignment for a Webdesign course.
+                            </font>
+                            </td>
+                        </tr>
+                    </table>
+
+                    </footer>
+                </td>
+                <td rowspan="3" bgcolor="DarkOrange"> </td>
+                <td bgcolor="Indigo">&nbsp;</td>                  
+            </tr>
+            <tr>
+                <!-- thin horizontal line in outer columns -->
+                <td height="5" bgcolor="DarkOrange"></td>
+                <td height="5" bgcolor="DarkOrange"></td>
+            </tr>
+            <tr>
+                <td height="40" align="right" valign="bottom" style="padding-right: 10px; padding-bottom: 5px;" bgcolor="Black">
+                    <strong><font size="-1" color="Purple">All rights reserved.<br>
+                    © 2023 L.A. de Hamer</font></strong>
+                </td>                
+                <td height="40" valign="bottom" style="padding-left: 10px; padding-bottom: 5px;" bgcolor="Black">
+                    <strong><font size="-1" color="Purple">All images<br>
+                    © Julianatoren</font></strong>
+                </td>                  
+            </tr>                        
+        </table>
+
+    </body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Julianatoren - Halloween 2023</title>
+        <meta name="description" content="Webdesign Course Homework - Make a webpage for a local attraction">
+        <meta name="keywords" content="Julianatoren, amusementpark, child-friendly, webdesign course">
+        <meta name="copyright" content="All images © Julianatoren">
+        
+<!--   
+IMPORTANT:  Because CSS lesson has not been given yet, use traditional styling as much as possible.
+            Validator errors regarding obsolete styling can be ignored. 
+         
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+NHA Webdesign Course - Lesson 9 - Homework Requirements
+
+
+- Topic: a tourist-attraction-near-you (or random other attraction)
+- 3 html pages
+  -> each page with full HTML5-document structure (even when not in use)
+  -> names:     index.html, gallery.html, info.html
+- header has logo image
+- under logo a simple menu with links to the 3 pages
+
+Specifics index.html:
+- short description of tourist attraction; original text or text with source reference
+- iframe showing tourist attractions official website
+
+Specifics gallery.html
+- at minimum 3 images showing the tourist attraction
+- an audiofragment of your own choice
+
+Specifics info.html
+- overview of opening times
+- optionally more relevant info such as travel directions, ticket prices, etc
+- at least 2 YouTube video's of the attraction (or of your own choice)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+NOTE:       To avoid multiple <font> declarations, do use CSS to style font family and background+font color.
+            Use the most whimsical web safe font for a better match with the Halloween theme             
+-->
+        <style>
+            body {
+                background-color: whitesmoke;
+                font-family: cursive;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Header with logo & navigation bar -->
+        <table border="0" style="border-spacing: 0px;" align="center">
+            <tr>
+                <!-- Amusementpark Logo with link to home/index page -->
+                <td width="200" align="center" valign="middle" bgcolor="Black">
+                    <header>
+                    <a href="index.html"><img src="images/logo-julianatoren.webp" height="80" alt="Julianatoren Logo" title="© Julianatoren"></a>                    
+                    </header>                    
+                </td>
+
+                <td width="5" rowspan="5" bgcolor="DarkOrange"> </td>
+
+                <!-- Special event logo with link to amusementpark website -->
+                <td width="768" rowspan="5" bgcolor="Black">
+                    <a href="https://www.julianatoren.nl/evenement/halloween/" target="_blank">
+                    <img src="images/JT2023-Halloween_cropped.webp" width="768" style="vertical-align: bottom;" alt="Julianatoren 2023 - Halloween" title="©2023 Juliatoren - Come celebrate Halloween with us!!!"></a>
+                </td>
+            
+                <!-- use this vertical line to define the cells heights so the wide columns can use rowspan -->
+                <td height="90" width="5" bgcolor="DarkOrange"> </td>
+
+                <!-- Buy tickets image with (extra) link to info page -->
+                <td width="200" height="115" rowspan="3" align="center" valign="top" bgcolor="Black"> 
+                    <a href="info.html"><img src="images/buy-tickets.png" width="154" style="vertical-align: bottom;" alt="Buy tickets for Julianatoren" title="©2023 Julianatoren - Ticket information"></a>
+                </td>                
+            </tr>
+            <tr>
+                <!-- thin horizontal line in left column -->
+                <td bgcolor="DarkOrange"> </td>
+
+                <!-- vertical line used for definining cell heights-->
+                <td height="5" bgcolor="DarkOrange"> </td>
+            </tr>
+            <tr>
+                <!-- Navigation bar - Force text to orange for links -->
+                <td rowspan="3" valign="top" bgcolor="Indigo" style="padding-left: 20px; padding-top: 10px">
+                    <nav><b>
+                    <a href="index.html"><font color="Orange">Homepage</font></a><br>
+                    <a href="gallery.html"><font color="Orange">Events</font></a><br>
+                    <a href="info.html"><font color="Orange">Information</font></a>
+                    </b></nav>                                       
+                </td>
+
+                <!-- vertical line used for definining cell heights-->
+                <td bgcolor="DarkOrange"> </td>                
+            </tr> 
+            <tr>
+                <!-- vertical line used for definining cell heights-->
+                <td height="5" bgcolor="DarkOrange"> </td>
+
+                <!-- thin horizontal line in right column -->
+                <td bgcolor="DarkOrange"> </td>
+            </tr>
+            <tr>
+                <!-- vertical line used for definining cell heights-->
+                <td height="70" bgcolor="DarkOrange"> </td>
+
+                <!-- background filler (because of extra height needed for <nav>) -->
+                <td bgcolor="Indigo"> </td>
+            </tr>                        
+            <tr>
+                <!-- horizontal divider between header and content -->
+                <td bgcolor="Indigo"> </td>
+                <td colspan="3" height="15" bgcolor="DarkOrange"> </td>
+                <td bgcolor="Indigo"> </td>
+            </tr>
+
+            <!-- CONTENT block - see above for requirements -->
+            <tr>
+                <td bgcolor="Indigo"> </td>                
+                <td bgcolor="DarkOrange"> </td>                
+                <td valign="top" bgcolor="Black">
+
+                    <table width="98%" border="0" align="center">
+                        <tr>
+                            <td height="50" align="center" valign="top">
+                                <!-- For better spacing control use <font size="xx"> instead of <h2> -->
+                                <font size="+2"><b>Children's amusement park Julianatoren is awesome!!!</b></font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <img src="images/pumpkins.jpg" alt="Halloween pumpkins" width="163" align="left">
+                                With more than <b>60 attractions</b> and shows amusement park Julianatoren<br>
+                                is a great place to visit for children up to 10 years old.<br>
+                                <br>
+                                Be sure to visit them at <strong><font color="DarkOrange">Halloween</font></strong>. It is <font color="Lime"><b>spooky</b></font> ... but only a little. &#x1F47B;
+                                
+                                <hr>
+                            </td>
+                        </tr>
+                        <tr>                            
+                            <td align="center">
+                                <iframe src="https://www.julianatoren.nl/evenement/halloween/" height="300" width="400"></iframe>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <hr>
+                                &#x1F383; 
+                                <b>
+                                <a href="https://www.julianatoren.nl/evenement/halloween/" target="_blank"><font color="Orange">Visit the official Julianatoren website for more information</font></a>
+                                </b> 
+                                &#x1F47B;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20"> </td>
+                        </tr>                    
+                    </table>
+
+                </td>
+                <td bgcolor="DarkOrange"> </td>
+                <td valign="top" bgcolor="Indigo"> </td>                 
+            </tr>
+
+            <!-- Footer - With copyrights, disclaimer, etc. -->
+            <tr>
+                <!-- horizontal divider between content and footer.      (Do not overcomplicate table by using extra rowspans.) -->
+                <td bgcolor="Indigo"> </td>
+                <td colspan="3" height="15" bgcolor="DarkOrange"> </td>
+                <td bgcolor="Indigo"> </td>
+            </tr>
+            <tr>
+                <td bgcolor="Indigo">&nbsp;</td>                
+                <td rowspan="3" bgcolor="DarkOrange"> </td>                  
+                <td height="90"  rowspan="3" bgcolor="Black">
+                    <footer>
+
+                    <!-- Disclaimer (since these pages will be available online )-->
+                    <table width="90%" border="0" align="center">
+                        <tr>
+                            <td align="center" valign="middle" style="border: 0px;">
+                            <font color="MediumVioletRed">
+                            === DISCLAIMER ===<br>
+                            In no way, shape or form is this mini-website affiliated with amusementpark <strong>Julianatoren</strong>.<br>
+                            This is merely an assignment for a Webdesign course.
+                            </font>
+                            </td>
+                        </tr>
+                    </table>
+
+                    </footer>
+                </td>
+                <td rowspan="3" bgcolor="DarkOrange"> </td>
+                <td bgcolor="Indigo">&nbsp;</td>                  
+            </tr>
+            <tr>
+                <!-- thin horizontal line in outer columns -->
+                <td height="5" bgcolor="DarkOrange"></td>
+                <td height="5" bgcolor="DarkOrange"></td>
+            </tr>
+            <tr>
+                <td height="40" align="right" valign="bottom" style="padding-right: 10px; padding-bottom: 5px;" bgcolor="Black">
+                    <strong><font size="-1" color="Purple">All rights reserved.<br>
+                    © 2023 L.A. de Hamer</font></strong>
+                </td>                
+                <td height="40" valign="bottom" style="padding-left: 10px; padding-bottom: 5px;" bgcolor="Black">
+                    <strong><font size="-1" color="Purple">All images<br>
+                    © Julianatoren</font></strong>
+                </td>                  
+            </tr>                        
+        </table>
+
+    </body>
+</html>
