@@ -111,6 +111,42 @@ img {
     background-color: plum;
 }
 
-#cell11,#cell23,#cell31{                    
-    color: violet;
+#text11{
+    background-color: plum;
+    color: blueviolet;
+}
+#text13{
+    background-color: indigo;
+    color: hotpink;
+}                
+#text21{
+    background-color: darkviolet;
+    color: deeppink;
+}                
+#text23{
+    background-color: magenta;
+    color: darkorchid;
+}                
+#text31{
+    background-color: deeppink;
+    color: indigo;
+}                
+#text33{
+    background-color: blueviolet;
+    color: mediumpurple;
+}                
+#text41{
+    background-color: darkmagenta;
+    color: orchid;
+}
+#text43{ 
+    background-color: rebeccapurple;                   
+    color: magenta;
+}                  
+
+#text11,#text13,#text21,#text23,#text31,#text33,#text41,#text43{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
