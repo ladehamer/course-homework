@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Homework</title>
+        <meta name="description" content="Homework assignment for NHA Webdesign Course - Lesson 12">
+        <meta name="author" content="LA de Hamer">
+
+<!--   
+IMPORTANT:  We have now gotten a rudimentary lesson concerning CSS3 and the various methods of using of colors.
+            Try to use CSS for styling, layout, etc. as much as possible, but where skills are still lacking
+            obsolete styling can still be used.
+
+            For now validator errors regarding obsolete styling can still be ignored if the indicated issues
+            cannot be addressed yet due to limited CSS knowledge.
+         
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+NHA Webdesign Course - Lesson 12 - Homework Requirements
+
+- Make a page with a title of your choice
+  -> The page must have a header & footer with an appropriate size and a background colour of your choice
+  -> The page has a table with 4x4 cells.
+  -> Each cell has a different background colour and has it's own unique ID
+  -> All cells in columns 1 and 3 have a random word
+  -> Each word has a different backgroundcolor
+  -> All cells in column 2 and 4 contain and image
+- Put the CCS code in an external style sheet
+- Link the style sheet in the <head> part of the webpage
+- Put online using GitHub and share with teacher
+
+-->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" /
+
+    </head>
+    <body>
+        <div id="page">
+
+            <header>
+                <div>                
+                    <h1>Lesson 12</h1>
+                    <p>A rudimentary assignment to practice using CCS3 and colour.</p>           
+                </div>
+            </header>
+
+            <!--CONTENT TABLE - BEGIN -->
+            <table>
+                <tr>
+                    <th colspan="4">Supported pink/purple names</th>
+                </tr>
+                <tr>
+                    <td id="cell11">monkey</td>
+                    <td id="cell12"><img src="images/smilie_1.png" alt="random smilie"></td>
+                    <td id="cell13">zebra</td>
+                    <td id="cell14"><img src="images/smilie_2.png" alt="random smilie"></td>
+                </tr>
+                <tr>
+                    <td id="cell21">horse</td>
+                    <td id="cell22"><img src="images/smilie_3.png" alt="random smilie"></td>
+                    <td id="cell23">dolphin</td>
+                    <td id="cell24"><img src="images/smilie_4.png" alt="random smilie"></td>
+                </tr>
+                <tr>
+                    <td id="cell31">crocodile</td>
+                    <td id="cell32"><img src="images/smilie_5.png" alt="random smilie"></td>
+                    <td id="cell33">dinosaur</td>
+                    <td id="cell34"><img src="images/smilie_6.png" alt="random smilie"></td>
+                </tr>
+                <tr>
+                    <td id="cell41">shark</td>
+                    <td id="cell42"><img src="images/smilie_7.png" alt="random smilie"></td>
+                    <td id="cell43">tiger</td>
+                    <td id="cell44"><img src="images/smilie_8.png" alt="random smilie"></td>
+                </tr>
+            </table>
+            <!--CONTENT TABLE - END -->
+
+            <footer><div id="pagefooter">© 2023 LA de Hamer &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; All smilie images @ Pixaline</div></footer>
+
+        </div>
+    </body>
+</html>

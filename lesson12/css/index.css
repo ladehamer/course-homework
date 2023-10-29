@@ -1,0 +1,116 @@
+#page {
+    background-color: lavenderblush;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+    width: 680px;
+
+    margin: auto;
+}
+
+header, footer {
+    background-color: black;
+    color: lavenderblush;
+
+    display: flex;
+    justify-content: center;                    
+    align-items: center;              
+}
+
+header {
+    height: 120px;                     
+}
+
+footer{                  
+    font-size: small;
+    height: 50px;                              
+}        
+
+table { 
+    background-color: black;         
+    border-width: 1px;
+    border-style: solid;
+        
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th {
+    text-align: center;
+    font-size:x-large;
+    color: lavenderblush; 
+    
+    height: 40px;
+}
+
+td {
+    border-width: 0px;
+
+    width: 150px;
+
+    text-align: center;
+    font-size:x-large;
+    color: black;
+}
+
+img {
+    width: 150px;
+}
+
+#cell11{
+    background-color: blueviolet;
+}
+#cell12{
+    background-color: darkmagenta;
+}
+#cell13{
+    background-color: hotpink;
+}                
+#cell14{
+    background-color: darkviolet;
+}
+#cell21{
+    background-color: deeppink;
+}                
+#cell22{
+    background-color: fuchsia;
+}
+#cell23{
+    background-color: darkorchid;
+}                
+#cell24{
+    background-color: slateblue;                    
+}
+#cell31{
+    background-color: indigo;
+}                
+#cell32{
+    background-color: mediumorchid;
+}
+#cell33{
+    background-color: mediumpurple;
+}                
+#cell34{
+    background-color: violet;
+}
+#cell41{
+    background-color: orchid;
+}
+#cell42{
+    background-color: rebeccapurple;
+}
+#cell43{                    
+    background-color: magenta;
+}                  
+#cell44{
+    background-color: plum;
+}
+
+#cell11,#cell23,#cell31{                    
+    color: violet;
+}
