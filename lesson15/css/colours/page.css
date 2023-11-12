@@ -2,29 +2,33 @@ body{
     background-color: #fafafa;
 }
 
-#nav_me{
+#link_me{
     background-color: #7014a6;
     color: #f8f0fc;
+    text-decoration: none;
 }
-#nav_me:hover{
+#link_me:hover{
     background-color: #9611b8;
 }
 
-#nav_cv{
-    background-color: #0e7537;
-    color: #e8fcf0;                                
+#link_cv{
+    background-color: #0e7537;    
+    color: #e8fcf0;
+    text-decoration: none;
 }
-#nav_cv:hover{
+#link_cv:hover{
     background-color: #12a64d;
 }
 
-#nav_contact{
+#link_contact{
     background-color: #0f7b7d;
-    color: #c6f7f7;                
+    color: #c6f7f7;
+    text-decoration: none;                
 }
-#nav_contact:hover{
+#link_contact:hover{
     background-color: #14b7ba;
 }
+
 .loremlink{
     text-decoration: none;
 }

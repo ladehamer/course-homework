@@ -27,7 +27,7 @@ nav{
     font-size: smaller;
     font-weight: bold;
     text-transform:uppercase;
-}            
+}
 #content{
     min-height: 310px;
     padding-bottom: 15px;
@@ -59,9 +59,17 @@ ul{
 li{
     display: inline-block;
     text-align: center;
-    padding: 5px;
     width: 120px;
 }
+#link_me, #link_cv, #link_contact{
+    display: inline-block;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+}
+#link_me:focus, #link_cv:focus, #link_contact:focus{
+    outline: none;
+}
+
 #disclaimer{
     border-style: solid;
     border-width: 3px 0px 3px 0px;
