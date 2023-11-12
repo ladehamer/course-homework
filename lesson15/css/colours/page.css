@@ -1,0 +1,33 @@
+body{
+    background-color: #fafafa;
+}
+
+#nav_me{
+    background-color: #7014a6;
+    color: #f8f0fc;
+}
+#nav_me:hover{
+    background-color: #9611b8;
+}
+
+#nav_cv{
+    background-color: #0e7537;
+    color: #e8fcf0;                                
+}
+#nav_cv:hover{
+    background-color: #12a64d;
+}
+
+#nav_contact{
+    background-color: #0f7b7d;
+    color: #c6f7f7;                
+}
+#nav_contact:hover{
+    background-color: #14b7ba;
+}
+.loremlink{
+    text-decoration: none;
+}
+.loremlink:focus{
+    outline: none;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curriculum Vitae</title>
+        <meta name="description" content="Homework assignment for NHA Webdesign Course - Lesson 15">
+        <meta name="author" content="LA de Hamer">
+
+<!--   
+IMPORTANT:  We have now had various lessons concerning CSS3.
+            Try to use CSS for styling, layout, etc. as much as possible, but where skills are still lacking
+            obsolete styling can still be used.
+
+            For now validator errors regarding obsolete styling can still be ignored if the indicated issues
+            cannot be addressed yet due to limited CSS knowledge.
+         
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+NHA Webdesign Course - Lesson 15 - Homework Requirements
+
+- 3 pages: index.html, mijncv.html, contact.html
+- the <body> has a header with a menu
+  * colors and size of header are designer's choice
+  * menu must be horizontal buttons designed with CSS
+  * menu buttons must link to the other pages and must have a different layout in mouseover state
+  * the footer must have a copyright line of designer's choice and must match the rest of the page
+
+- index.html:
+  body has a paragraph with an intro text and an image (for instance of yourself)
+
+- mijncv.html
+  * similar to index.html in style and layout
+  * body has a simple table with info on education and work experience
+
+- contact.html
+  * similar to index.html in style and layout
+  * body has contact form that matches the rest of the page
+  * contact form has first name, last name, e-mail and message fields
+  * from has a submit button, who's active state is different from the resting state
+
+- Put online using GitHub and share with teacher
+
+CSS requirements:
+- CSS should be in an external style sheet
+
+- Link the style sheet in the <head> part of the webpage
+
+- the whole page has 1 backgroundcolor, excepting the elements in the body which have a different color
+
+- the elements in the body are centered horizontally and have whitespace (margin) left and right
+
+- the content of the header, body and footer have padding of min. 5 pixels
+
+-->        
+
+        <link rel="stylesheet" type="text/css" href="css/colours/me.css">        
+        <link rel="stylesheet" type="text/css" href="css/colours/page.css">     
+        <link rel="stylesheet" type="text/css" href="css/layout/page.css">
+        <link rel="stylesheet" type="text/css" href="css/layout/me.css">     
+    </head>
+    <body>
+        <header>
+            <h1>Webdesigner in Spé</h1>  
+            <h2>Dit Ben Ik</h2>          
+        </header>
+        <nav>
+            <ul>
+                <li id="nav_me">Dit Ben Ik</li>
+                <a href="html/mijncv.html"><li id="nav_cv">Mijn CV</li></a>
+                <a href="html/contact.html"><li id="nav_contact">Contact</li></a>
+            </ul>
+        </nav>
+        <div id="content">                
+                <p id="me_content">
+                    <img id="me_img" src="images/me.png" alt="nep plaatje van mij">
+
+                    Nam tristique elit et felis commodo volutpat. Nam et egestas odio. 
+                    Praesent tempor, massa nec volutpat sodales, ipsum velit maximus lacus, ac convallis metus orci in metus. 
+                    Quisque vel vehicula nibh, at scelerisque arcu. Ut gravida, nunc ut rutrum volutpat, nisi turpis ultrices leo, eu mollis nisl mauris nec massa. 
+                    Curabitur dictum cursus lorem, non tristique lectus elementum id. 
+                    Vestibulum ullamcorper nisl quis nisl convallis, id egestas tortor lobortis.
+                    <br><br> 
+                    Phasellus pretium risus congue mi vestibulum eleifend. In at vehicula nisl. Vestibulum vitae ultricies urna. 
+                    Praesent pellentesque, lacus vitae venenatis consequat, ex orci ultrices lacus, et accumsan augue sem vitae lorem. 
+                    Aliquam feugiat molestie dignissim. Vestibulum congue sem quam, vitae varius nunc sagittis sed. Donec sed condimentum ipsum. 
+                    Donec vitae blandit tortor. Sed finibus convallis tempor.                    
+                </p>
+        </div>
+        <footer><span class="boldtext italictext">Lorem Ipsum</span> texts generated using <a href="https://www.lipsum.com/" target="_blank" class="loremlink">https://www.lipsum.com/</a><br>
+        All other content © 2023, L.A. de Hamer. All rights reserved.</footer>
+        <div id="disclaimer">
+          <span class="boldtext">DISCLAIMER:</span> This mini-website is not an actual CV, but part of an assignment for a course in webdesign.<br>
+            Any resemblance to actual persons, living or dead, or other websites is purely coincidental.
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+#contact_content{
+    display: inline-block;
+    text-align: left;
+    margin: 20px auto auto auto;
+    padding: 0px;
+    width: 540px;
+}
+
+fieldset {
+    border-style: none;
+    padding: 20px 0px 10px 0px;
+    font-weight: bold;
+    margin: 20px auto auto auto;
+    width: 540px;
+}
+legend {
+    font-weight: bold;
+    text-align: center;
+    text-transform:uppercase;
+    padding: 6px 0px 6px 0px ;
+    width: 100%;                   
+}
+.contactfld{
+    padding: 0px 0px 0px 0px;
+    margin: auto;
+}
+.contactfld2{
+    padding: 10px 0px 0px 0px;
+    margin: auto;
+}            
+input[type="text"], input[type="email"], textarea, select, button{
+    display: inline-block;
+    width: 350px;
+    margin: 5px 0px 5px 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+
+    outline: none;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;                
+}
+textarea {
+    vertical-align: top;
+    height: 150px;
+    min-height: 150px;
+    resize: vertical;                                
+}
+button{
+    font-size: smaller;
+    font-weight: bold;
+    text-transform:uppercase;
+    height: 25px;
+    margin-top: 15px;                
+}           
+label{
+    display: inline-block;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    text-align:  left;
+    width: 178px
+}

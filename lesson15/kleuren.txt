@@ -1,0 +1,36 @@
+Paars
+-----
+header achtergrond		#7014a6		rgb(112, 20, 166)
+header tekst			#f8f0fc		rgb(248, 240, 252)
+header highlight		#9611b8		rgb(150, 17, 184)
+header line			    #b40fba		rgb(180, 15, 186)
+nav bar                 #51005C     rgb(81, 0, 92)
+link hover              #fc0fdd     rgb(252, 15, 221)
+link lorem              #faa5ef     rgb(250, 165, 239)
+
+
+Groen
+-----
+header achtergrond		#0e7537		rgb(14, 117, 55)
+header tekst			#e8fcf0		rgb(232, 252, 240)
+header highlight		#12a64d		rgb(18, 166, 77)
+header line			    #11a84d		rgb(20, 222, 100)
+nav bar                 #002B11     rgb(0, 43, 17)
+link hover              #32ed7c     rgb(50, 237, 124)
+link lorem              #90fcbb     rgb(144, 252, 187)
+
+
+Blauwig
+-------
+header achtergrond		#0f7b7d		rgb(15, 123, 125)
+header tekst			#d9fcfc		rgb(217, 252, 252)
+header highlight		#14b7ba		rgb(20, 183, 186)
+header line			    #18c6c9		rgb(24, 198, 201)
+nav bar                 #003642     rgb(0, 54, 66)
+link hover              #17e7eb     rgb(23, 231, 235)
+link lorem              #S75f8fa    rgb(117, 248, 250) 
+
+
+Font-family:	Verdana, Geneva, Tahoma, sans-serif
+
+

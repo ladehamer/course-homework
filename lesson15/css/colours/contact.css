@@ -1,0 +1,38 @@
+header, footer, #content, #disclaimer{
+    border-color: #18c6c9;
+}                     
+header, legend{
+    background-color: #0f7b7d;
+    color: #d9fcfc;                
+}
+footer, nav{
+    background-color: #003642;
+    color: #d9fcfc;
+}
+#content, #disclaimer{
+    background-color: #d9fcfc;                
+    color: #0f7b7d;
+}
+.loremlink{
+    color: #75f8fa;
+}
+.loremlink:hover, .loremlink:focus{
+    color: #17e7eb;
+}
+input[type="text"], input[type="email"], textarea, select{
+    border-color: #18c6c9;
+    background-color: #fafafa;
+    color: #0f7b7d;
+}
+button{
+    border-color: #18c6c9;
+    background-color: #0f7b7d;
+    color: #d9fcfc;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus, button:focus, button:hover{
+    box-shadow: 0 0 5px rgba(24, 198, 201, 1);
+}
+button:active{
+    background-color: #14b7ba;
+}
+

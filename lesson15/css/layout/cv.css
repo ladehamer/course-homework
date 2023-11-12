@@ -1,0 +1,40 @@
+table{
+    margin: auto;
+    text-align: left;
+    padding-top: 15px; 
+    padding-bottom: 15px;                
+    width: 540px;
+}
+th {
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-transform:uppercase;
+}
+.year{
+    vertical-align: top;
+    font-weight: bold;
+    padding-top: 15px;
+    width: 100px;
+}
+.function, .school{
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 10px;   
+}
+.company, .extra{                
+    padding-left: 10px;                
+}
+.funcdescr{
+    font-size: smaller;
+    font-style: italic;
+    padding-left: 10px; 
+    padding-top: 5px;
+}
+.degree{
+    padding-top: 15px;
+    font-size: smaller;
+    font-style: italic;
+    text-align: right;
+    width: 60px;
+}

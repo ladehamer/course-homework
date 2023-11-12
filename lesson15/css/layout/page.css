@@ -1,0 +1,77 @@
+body{
+    background-color: #fafafa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:small;
+    margin-top: 0px;
+
+    padding: 5px;
+}
+header, nav, footer, #content, #disclaimer{
+    box-sizing: border-box;
+    width: 600px;
+    min-width: 400px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right:auto;  
+    text-align: center;
+}
+header{
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;  
+
+    padding: 20px 5px 5px 5px;
+    text-align: center;
+}
+nav{
+    font-size: smaller;
+    font-weight: bold;
+    text-transform:uppercase;
+}            
+#content{
+    min-height: 310px;
+    padding-bottom: 15px;
+}
+#content, footer{
+    border-style: solid;
+    border-width: 3px 0px 0px 0px;                 
+}
+footer{
+    font-size: x-small;
+    text-align: center;
+    padding: 5px;                
+}
+h1{
+    margin: auto;
+    padding: 5px 5px 15px 5px;
+}
+h2{                
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    padding: 5px 0px 5px 0px;
+}                        
+ul{
+    margin: auto;
+    padding: 5px;
+    text-align: center;             
+}
+li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    width: 120px;
+}
+#disclaimer{
+    border-style: solid;
+    border-width: 3px 0px 3px 0px;
+    font-size: x-small;
+    text-align: center;    
+    padding: 5px 0px 5px 0px;
+}
+.boldtext{
+    font-weight: bold;
+}
+.italictext{
+    font-style:italic;
+}

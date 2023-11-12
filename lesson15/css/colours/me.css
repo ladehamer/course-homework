@@ -1,0 +1,21 @@
+header, footer, #content, #disclaimer{
+    border-color: #b40fba;
+}
+header{
+    background-color: #7014a6;
+    color: #f8f0fc;
+}
+footer, nav{
+    background-color: #51005C;
+    color: #f8f0fc;
+}
+#content, #disclaimer{
+    background-color: #f8f0fc;                
+    color: #7014a6;
+}
+.loremlink{
+    color: #faa5ef;
+  }
+.loremlink:hover, .loremlink:focus{
+    color: #fc0fdd;
+}
