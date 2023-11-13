@@ -38,8 +38,11 @@ nav{
 }
 footer{
     font-size: x-small;
-    text-align: center;
-    padding: 5px;                
+    text-align: center;         
+}
+#copyright{
+    padding: 5px 0px 5px 0px;
+    margin: auto;
 }
 h1{
     margin: auto;
@@ -72,9 +75,7 @@ li{
 
 #disclaimer{
     border-style: solid;
-    border-width: 3px 0px 3px 0px;
-    font-size: x-small;
-    text-align: center;    
+    border-width: 3px 0px 3px 0px; 
     padding: 5px 0px 5px 0px;
 }
 .boldtext{
