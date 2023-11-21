@@ -1,0 +1,74 @@
+dl, dt, dd{
+    margin: 0px;
+    padding: 0px;
+}
+dt{
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.dt_border{
+   border-width: 1px 0px 0px 0px; 
+}
+.withflag{
+    padding-left: 15px;
+}
+.noflag{
+    padding-left: 40px;
+}
+.imgflag{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px 5px 0px 0px;
+    width: 20px;
+}
+dd{
+    position: relative;
+    padding-bottom: 5px;
+    border-width: 0px;
+}
+.dd_extra{
+    display: inline-block;
+    text-align: left;
+    position: absolute;
+    top: 2px;
+    left: 90px;
+}
+section {
+    padding: 10px 10px 0px 10px;
+    min-height: 390px;
+    border-width: 0px;
+}
+#section2 {
+    border-width: 2px 0px 0px 0px;
+}
+@media only screen and (min-width: 768px){
+    #section2 { border-width: 0px 0px 0px 2px; }
+    #dd_last{ border-width: 0px 0px 1px 0px; }    
+}
+#img_sinterklaas, #img_cutout{
+    float: right;
+    width: 200px;
+    margin: 5px 0px 10px 10px;
+
+    border-width: 4px;
+    border-radius: 12px; 
+}
+#img_cutout{
+    height: 363px;
+    overflow: hidden;
+}
+#img_aaldering{
+    max-width: 800px ;
+    position: relative;   
+    left: -120px;
+}
+h3{
+    display: inline-block;
+    padding: 0px;
+}
+#disclaimer {
+    text-align: center;
+    border-width: 1px 0px 0px 0px;
+    padding: 5px 0px 5px 0px;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Het Schone Brummen</title>
+        <meta name="description" content="Homework assignment for NHA Webdesign Course - Lesson 15">
+        <meta name="author" content="LA de Hamer">
+<!--   
+IMPORTANT:  Try to use CSS for styling, layout, etc. as much as possible, but where skills are still lacking
+            obsolete styling can still be used. Only disregard validator errors due to obsolete styling.
+            Other errors should be fixed, despite limited CSS knowledge.
+         
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+NHA Webdesign Course - Lesson 18 - Homework Requirements
+
+Make a webpage about your hometown with these requirements:
+- The webpage has a header, footer and central section
+- The header has your hometown as heading
+- Use an external style for the font face
+- The heading has a photo of your hometown as background
+- The central section exists of 2 parts
+- The left part:
+  * is 2 'columns' wide
+  * contains a list of 5 facts about your hometown
+- The right part:
+  * is 9 'columns' wide
+  * has a different background color
+  * the content is made with 2 <div>'s
+  * each <div> has an article, with a text about a tourist attraction in your hometown (or a Lorem Ipsum text) and a small image of the tourist attraction
+  * the image is to the right of the text
+  * the webpage is responsive and has least 1 mediaquery
+  * the webpage is coded with the 'mobile first' principal
+- Put online using GitHub and share with teacher
+
+-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sarabun&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/page_colours.css">
+        <link rel="stylesheet" type="text/css" href="css/page_fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/page_layout.css">
+        <link rel="stylesheet" type="text/css" href="css/page_content.css">
+
+        <style>
+            #headerbg {
+                position: relative; 
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #headerbg::before {    
+                content: "";
+                background-image: url('images/header.png');
+                position: absolute;                
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                background-size: cover;                
+                background-position: center;
+                background-repeat: no-repeat;                
+                opacity: 0.5;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="content">        
+            <header>
+                <div id="headerbg"><h1 id="headertext">Brummen</h1></div>                
+            </header>
+            <div id="rows">
+                <div id="left" class="col-2">
+                    <dl>
+                        <dt>Land</dt>
+                        <dd class="withflag"><img class="imgflag" src="images/flag_netherlands.png" alt="Flag Netherlands">Nederland</dd>                        
+                        <dt class="dt_border">Provincie</dt>
+                        <dd class="withflag"><img class="imgflag" src="images/flag_gelderland.png" alt="Flag Gelderland">Gelderland</dd>
+                        <dt class="dt_border">Gemeente</dt>
+                        <dd class="withflag"><img class="imgflag" src="images/flag_brummen.png" alt="Flag Brummen">Brummen</dd>
+                        <dt class="dt_border">Coördinaten</dt>
+                        <dd class="noflag">52° 5&#x2032; NB, 6° 9&#x2032; OL</dd>
+                        <dt class="dt_border">Inwonertal</dt>
+                        <dd class="noflag">8.485 <div class="dd_extra">(per 1-1-2021)</div></dd>                        
+                        <dt class="dt_border">Eerste vermelding</dt>
+                        <dd id="dd_last" class="noflag">794<div class="dd_extra">(als <span class="emphasis">Brimnum</span>)</div></dd>
+                    </dl>
+                </div>
+                <div id="main" class="col-9">
+                    <section>
+                        <a href="https://www.brummensnieuws.nl/algemeen/algemeen/27503/sint-komt-aan-in-eerbeek-en-brummen" target="_blank"><img 
+                            id="img_sinterklaas" src="images/sinterklaasintocht2023.jpg" alt="Burgemeester van Hedel en Sinterklaas"></a>                        
+                        <h3>Sinterklaasintocht 2023</h3>
+                        <p>
+                            De Sint heeft besloten dat hij, na de drukke intocht op zaterdag in Gorinchem, zal overnachten in Brummen bij 
+                            Audreys aan het Marktplein.
+                            <br><br>
+                            In het grootste geheim hebben de kinderen van Brummen een verrassing voorbereid. 
+                            Op zondagochtend zullen zij zich verzamelen op het Marktplein en onder leiding van de burgemeester en van Hans Anders, 
+                            de presentator van het Brummense Sinterklaasjournaal, zullen zij de goedheiligman wakker zingen.
+                            <br><br>
+                            Later op de ochtend zal Sinterklaas zich samen met de burgemeester naar de muziekkoepel begeven, waar hem de 
+                            volgende verrassing te wachten staat: een ochtengymnastiek sessie met alle Pieten en kinderen van Brummen.
+                            <br><br>
+                            Na het zingen van een aantal tradionele liedjes is er tijd voor de kinderen om, onder het genot van pepernoten, 
+                            chocolademelk en manderijnen, de Sint gedag te zeggen, op de foto te gaan, etc.<br>
+                            Vervolgens mogen de kinderen hem uitzwaaien als hij zijn tocht door het land gaat voortzetten.
+                        </p>
+                    </section>
+                    <section id="section2">
+                        <div id="img_cutout"><a href="https://www.gallery-aaldering.com/nl/" target="_blank"><img id="img_aaldering" 
+                            src="images/gallery-aaldering.jpg" alt="Image of an old model car"></a></div>
+                        <h3>Gallery Aaldering</h3>
+                        <p>
+                            Cras vel iaculis risus, vestibulum viverra metus. Morbi volutpat tristique urna sed vehicula. 
+                            Quisque vitae faucibus ante. Donec vitae lobortis quam. Integer nec risus et urna feugiat pretium. 
+                            Suspendisse rhoncus leo non libero suscipit lacinia. Fusce id elit quis ligula auctor cursus sit amet et nulla. 
+                            Aenean at nunc tempus urna dictum cursus. 
+                            <br><br>
+                            Proin dapibus odio ac odio consectetur feugiat. Vestibulum accumsan malesuada maximus. 
+                            Nulla facilisis elit eu felis tristique tincidunt. Integer id arcu nec dui rhoncus dapibus sed eget tortor. 
+                            Ut eleifend magna id nisi pellentesque consectetur. Sed consectetur lobortis nulla et congue. 
+                            Donec vitae eros in magna facilisis ultricies. Fusce congue libero felis.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <footer><div id="copyright">© 2023 LA de Hamer</div></footer>
+            <div id="disclaimer"><span class="emphasis2">DISCLAIMER:</span> This webpage is not an actual informational page about Brummen, 
+                but part of an assignment for a course in webdesign. Any resemblance to actual persons, living or dead, or other websites is purely coincidental.
+            </div>            
+        </div>        
+    </body>
+</html>
