@@ -35,21 +35,25 @@ dd{
     left: 90px;
 }
 section {
-    padding: 10px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
     min-height: 390px;
     border-width: 0px;
 }
-#section2 {
+#section2 { 
     border-width: 2px 0px 0px 0px;
 }
 @media only screen and (min-width: 768px){
-    #section2 { border-width: 0px 0px 0px 2px; }
+    #section1{ padding: 0px 20px 0px 0px; }
+    #section2 { 
+        padding: 0px 0px 0px 20px;
+        border-width: 0px 0px 0px 2px; 
+    }
     #dd_last{ border-width: 0px 0px 1px 0px; }    
 }
 #img_sinterklaas, #img_cutout{
     float: right;
     width: 200px;
-    margin: 5px 0px 10px 10px;
+    margin: 20px 0px 10px 10px;
 
     border-width: 4px;
     border-radius: 12px; 

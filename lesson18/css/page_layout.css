@@ -7,7 +7,7 @@ body, #rows, #left, #main, h1, section{
     border-width: 1px 0px 1px 0px;
 }
 #left {
-    min-width: 180px; 
+    min-width: 190px; 
     border-width: 0px 0px 2px 0px;
 }
 #main{
