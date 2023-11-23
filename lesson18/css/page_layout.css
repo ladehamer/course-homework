@@ -59,7 +59,6 @@ body, #rows, #left, #main, h1, section{
 }
 
 footer{
-    clear: float;
     text-align: center;
     line-height: 30px;
 }
